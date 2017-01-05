@@ -13,6 +13,7 @@
 		DEB4B0E41E1E09980002B9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB4B0E31E1E09980002B9AF /* Assets.xcassets */; };
 		DEB4B0E71E1E09980002B9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB4B0E51E1E09980002B9AF /* LaunchScreen.storyboard */; };
 		DEB4B0F21E1E09980002B9AF /* NestedScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0F11E1E09980002B9AF /* NestedScrollViewUITests.swift */; };
+		DEB4B0FD1E1E17ED0002B9AF /* ScrollingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0FC1E1E17ED0002B9AF /* ScrollingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		DEB4B0ED1E1E09980002B9AF /* NestedScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB4B0F11E1E09980002B9AF /* NestedScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedScrollViewUITests.swift; sourceTree = "<group>"; };
 		DEB4B0F31E1E09980002B9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB4B0FC1E1E17ED0002B9AF /* ScrollingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				DEB4B0E31E1E09980002B9AF /* Assets.xcassets */,
 				DEB4B0E51E1E09980002B9AF /* LaunchScreen.storyboard */,
 				DEB4B0E81E1E09980002B9AF /* Info.plist */,
+				DEB4B0FC1E1E17ED0002B9AF /* ScrollingCell.swift */,
 			);
 			path = NestedScrollView;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEB4B0FD1E1E17ED0002B9AF /* ScrollingCell.swift in Sources */,
 				DEB4B0DF1E1E09970002B9AF /* ViewController.swift in Sources */,
 				DEB4B0DD1E1E09970002B9AF /* AppDelegate.swift in Sources */,
 			);
