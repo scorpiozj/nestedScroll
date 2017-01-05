@@ -1,0 +1,417 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DEB4B0DD1E1E09970002B9AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0DC1E1E09970002B9AF /* AppDelegate.swift */; };
+		DEB4B0DF1E1E09970002B9AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0DE1E1E09970002B9AF /* ViewController.swift */; };
+		DEB4B0E21E1E09980002B9AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB4B0E01E1E09980002B9AF /* Main.storyboard */; };
+		DEB4B0E41E1E09980002B9AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB4B0E31E1E09980002B9AF /* Assets.xcassets */; };
+		DEB4B0E71E1E09980002B9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB4B0E51E1E09980002B9AF /* LaunchScreen.storyboard */; };
+		DEB4B0F21E1E09980002B9AF /* NestedScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0F11E1E09980002B9AF /* NestedScrollViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DEB4B0EE1E1E09980002B9AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DEB4B0D11E1E09970002B9AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DEB4B0D81E1E09970002B9AF;
+			remoteInfo = NestedScrollView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DEB4B0D91E1E09970002B9AF /* NestedScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB4B0DC1E1E09970002B9AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEB4B0DE1E1E09970002B9AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEB4B0E11E1E09980002B9AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEB4B0E31E1E09980002B9AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEB4B0E61E1E09980002B9AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEB4B0E81E1E09980002B9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEB4B0ED1E1E09980002B9AF /* NestedScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NestedScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB4B0F11E1E09980002B9AF /* NestedScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedScrollViewUITests.swift; sourceTree = "<group>"; };
+		DEB4B0F31E1E09980002B9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB4B0D61E1E09970002B9AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB4B0EA1E1E09980002B9AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DEB4B0D01E1E09970002B9AF = {
+			isa = PBXGroup;
+			children = (
+				DEB4B0DB1E1E09970002B9AF /* NestedScrollView */,
+				DEB4B0F01E1E09980002B9AF /* NestedScrollViewUITests */,
+				DEB4B0DA1E1E09970002B9AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB4B0DA1E1E09970002B9AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB4B0D91E1E09970002B9AF /* NestedScrollView.app */,
+				DEB4B0ED1E1E09980002B9AF /* NestedScrollViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB4B0DB1E1E09970002B9AF /* NestedScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				DEB4B0DC1E1E09970002B9AF /* AppDelegate.swift */,
+				DEB4B0DE1E1E09970002B9AF /* ViewController.swift */,
+				DEB4B0E01E1E09980002B9AF /* Main.storyboard */,
+				DEB4B0E31E1E09980002B9AF /* Assets.xcassets */,
+				DEB4B0E51E1E09980002B9AF /* LaunchScreen.storyboard */,
+				DEB4B0E81E1E09980002B9AF /* Info.plist */,
+			);
+			path = NestedScrollView;
+			sourceTree = "<group>";
+		};
+		DEB4B0F01E1E09980002B9AF /* NestedScrollViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DEB4B0F11E1E09980002B9AF /* NestedScrollViewUITests.swift */,
+				DEB4B0F31E1E09980002B9AF /* Info.plist */,
+			);
+			path = NestedScrollViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEB4B0D81E1E09970002B9AF /* NestedScrollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB4B0F61E1E09980002B9AF /* Build configuration list for PBXNativeTarget "NestedScrollView" */;
+			buildPhases = (
+				DEB4B0D51E1E09970002B9AF /* Sources */,
+				DEB4B0D61E1E09970002B9AF /* Frameworks */,
+				DEB4B0D71E1E09970002B9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NestedScrollView;
+			productName = NestedScrollView;
+			productReference = DEB4B0D91E1E09970002B9AF /* NestedScrollView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DEB4B0EC1E1E09980002B9AF /* NestedScrollViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB4B0F91E1E09980002B9AF /* Build configuration list for PBXNativeTarget "NestedScrollViewUITests" */;
+			buildPhases = (
+				DEB4B0E91E1E09980002B9AF /* Sources */,
+				DEB4B0EA1E1E09980002B9AF /* Frameworks */,
+				DEB4B0EB1E1E09980002B9AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DEB4B0EF1E1E09980002B9AF /* PBXTargetDependency */,
+			);
+			name = NestedScrollViewUITests;
+			productName = NestedScrollViewUITests;
+			productReference = DEB4B0ED1E1E09980002B9AF /* NestedScrollViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB4B0D11E1E09970002B9AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Charles;
+				TargetAttributes = {
+					DEB4B0D81E1E09970002B9AF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					DEB4B0EC1E1E09980002B9AF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DEB4B0D81E1E09970002B9AF;
+					};
+				};
+			};
+			buildConfigurationList = DEB4B0D41E1E09970002B9AF /* Build configuration list for PBXProject "NestedScrollView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEB4B0D01E1E09970002B9AF;
+			productRefGroup = DEB4B0DA1E1E09970002B9AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB4B0D81E1E09970002B9AF /* NestedScrollView */,
+				DEB4B0EC1E1E09980002B9AF /* NestedScrollViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEB4B0D71E1E09970002B9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB4B0E71E1E09980002B9AF /* LaunchScreen.storyboard in Resources */,
+				DEB4B0E41E1E09980002B9AF /* Assets.xcassets in Resources */,
+				DEB4B0E21E1E09980002B9AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB4B0EB1E1E09980002B9AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB4B0D51E1E09970002B9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB4B0DF1E1E09970002B9AF /* ViewController.swift in Sources */,
+				DEB4B0DD1E1E09970002B9AF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEB4B0E91E1E09980002B9AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEB4B0F21E1E09980002B9AF /* NestedScrollViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DEB4B0EF1E1E09980002B9AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DEB4B0D81E1E09970002B9AF /* NestedScrollView */;
+			targetProxy = DEB4B0EE1E1E09980002B9AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DEB4B0E01E1E09980002B9AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB4B0E11E1E09980002B9AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEB4B0E51E1E09980002B9AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB4B0E61E1E09980002B9AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEB4B0F41E1E09980002B9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEB4B0F51E1E09980002B9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEB4B0F71E1E09980002B9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NestedScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhjxml.NestedScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DEB4B0F81E1E09980002B9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NestedScrollView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhjxml.NestedScrollView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DEB4B0FA1E1E09980002B9AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NestedScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhjxml.NestedScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NestedScrollView;
+			};
+			name = Debug;
+		};
+		DEB4B0FB1E1E09980002B9AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = NestedScrollViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhjxml.NestedScrollViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = NestedScrollView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB4B0D41E1E09970002B9AF /* Build configuration list for PBXProject "NestedScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB4B0F41E1E09980002B9AF /* Debug */,
+				DEB4B0F51E1E09980002B9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB4B0F61E1E09980002B9AF /* Build configuration list for PBXNativeTarget "NestedScrollView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB4B0F71E1E09980002B9AF /* Debug */,
+				DEB4B0F81E1E09980002B9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DEB4B0F91E1E09980002B9AF /* Build configuration list for PBXNativeTarget "NestedScrollViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB4B0FA1E1E09980002B9AF /* Debug */,
+				DEB4B0FB1E1E09980002B9AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DEB4B0D11E1E09970002B9AF /* Project object */;
+}
