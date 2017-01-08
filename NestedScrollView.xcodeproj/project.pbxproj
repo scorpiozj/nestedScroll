@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE0F59811E2267370017A0FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE0F59801E2267370017A0FE /* Constants.swift */; };
 		DEB4B0DD1E1E09970002B9AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0DC1E1E09970002B9AF /* AppDelegate.swift */; };
 		DEB4B0DF1E1E09970002B9AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB4B0DE1E1E09970002B9AF /* ViewController.swift */; };
 		DEB4B0E21E1E09980002B9AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB4B0E01E1E09980002B9AF /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DE0F59801E2267370017A0FE /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		DEB4B0D91E1E09970002B9AF /* NestedScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NestedScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEB4B0DC1E1E09970002B9AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEB4B0DE1E1E09970002B9AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				DEB4B0E51E1E09980002B9AF /* LaunchScreen.storyboard */,
 				DEB4B0E81E1E09980002B9AF /* Info.plist */,
 				DEB4B0FC1E1E17ED0002B9AF /* ScrollingCell.swift */,
+				DE0F59801E2267370017A0FE /* Constants.swift */,
 			);
 			path = NestedScrollView;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				DEB4B0FD1E1E17ED0002B9AF /* ScrollingCell.swift in Sources */,
 				DEB4B0DF1E1E09970002B9AF /* ViewController.swift in Sources */,
 				DEB4B0DD1E1E09970002B9AF /* AppDelegate.swift in Sources */,
+				DE0F59811E2267370017A0FE /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +410,7 @@
 				DEB4B0F81E1E09980002B9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DEB4B0F91E1E09980002B9AF /* Build configuration list for PBXNativeTarget "NestedScrollViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +419,7 @@
 				DEB4B0FB1E1E09980002B9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
