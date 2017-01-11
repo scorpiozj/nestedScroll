@@ -16,17 +16,21 @@ open class ScrollingCell: UICollectionViewCell, UIScrollViewDelegate {
     ///default color is red
     var color: UIColor! = UIColor.red{
         didSet {
-            self.contentView.backgroundColor = self.color
+            let colorView = self.contentView.viewWithTag(kColorViewTag)
+            colorView?.backgroundColor = self.color
+//            self.contentView.backgroundColor = self.color
         }
     }
     weak open var delegate: ScrollingCellDelegate?
     static var cellIdentifier: String = "ScrollingCellIdentifier"
     var scrollview: UIScrollView? = nil
     
+    
+    var pulling: Bool = false
     // MARK:
     override init(frame: CGRect){
         super.init(frame: frame)
-        self.contentView.backgroundColor = self.color
+        self.contentView.backgroundColor = UIColor.cyan
         
         self.scrollview = UIScrollView.init()
         self.scrollview!.delegate = self
@@ -56,7 +60,39 @@ open class ScrollingCell: UICollectionViewCell, UIScrollViewDelegate {
         colorView?.frame = self.scrollview!.convert(bounds, from: self.contentView)
         
     }
+    //MARK:UIScrollViewDelegate
+    ///? protocol 定义／实现  是否需要 public
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offset = Int(scrollView.contentOffset.x)
+        
+        if offset > ZZConstrants.Pull_Threshold && !pulling {
+            self.delegate!.scrollingCellDidBeginPulling(self)
+            pulling = true
+        }
+        
+        if pulling == true {
+            let pullOffset = max(0, offset - ZZConstrants.Pull_Threshold)
+            self.delegate!.scrollCell(self, didChangePullOffset: Float(pullOffset))
+        }
+    }
     
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            scrollingEnded()
+        }
+    }
+    
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        scrollingEnded()
+    }
+    ////注意 self.delegate？
+    func scrollingEnded() -> Void {
+
+        self.delegate?.scrollCellDidEndPulling(self)
+        pulling = false
+        
+        self.scrollview!.contentOffset = CGPoint(x: 0, y: 0)
+    }
 }
 
 ///open 不能修饰protocol

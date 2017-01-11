@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+struct ZZConstrants {
+    
+    static let Pull_Threshold = 60
+    
+    static let appName     = "Test"
+    
+    struct Path {
+        static let Documents = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, FileManager.SearchPathDomainMask.userDomainMask, true)[0] as String
+        static let Tmp = NSTemporaryDirectory()
+    }
+    
+    
+}

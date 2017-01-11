@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDataSource {
+class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDataSource, ScrollingCellDelegate {
     //MARK:
     @IBOutlet weak var scrollViewOuter: UIScrollView!
     
@@ -24,7 +24,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDa
         p_configureOuterScrollView()
         p_addSubviews()
     }
-
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -81,6 +83,7 @@ class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDa
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ScrollingCell.cellIdentifier, for: indexPath) as! ScrollingCell
+        cell.delegate = self
         if indexPath.row % 2 == 0{
             cell.color = UIColor.red
         }
@@ -91,6 +94,20 @@ class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDa
             cell.color = UIColor.blue
         }
         return cell
+    }
+    
+    //MARK: ScrollingCellDelegate
+    /**
+     潜入的scrollview在滑动的时候，父scrollview要禁止滑动，并且contentoffset要随之变化
+     */
+    func scrollingCellDidBeginPulling(_ cell: ScrollingCell) {
+        self.scrollViewOuter.isScrollEnabled = false
+    }
+    func scrollCell(_ cell: ScrollingCell, didChangePullOffset offset: Float) {
+        self.scrollViewOuter.setContentOffset(CGPoint.init(x: Double(offset), y: 0.0), animated: true)
+    }
+    func scrollCellDidEndPulling(_ cell: ScrollingCell) {
+        self.scrollViewOuter.isScrollEnabled = true
     }
 }
 
