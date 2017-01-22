@@ -24,9 +24,9 @@ class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDa
         p_configureOuterScrollView()
         p_addSubviews()
     }
-    override func viewDidAppear(_ animated: Bool) {
-        
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        p_configureOuterScrollView()
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -38,6 +38,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDa
         self.scrollViewOuter.contentSize = CGSize(width: viewFrame.size.width * 2.0, height: viewFrame.size.height)
         self.scrollViewOuter.isPagingEnabled = true
         self.scrollViewOuter.delegate = self
+        self.scrollViewOuter.bounces = false
+        self.scrollViewOuter.showsVerticalScrollIndicator = false
+        self.scrollViewOuter.showsHorizontalScrollIndicator = false
+        
     }
     
     fileprivate func p_addSubviews() -> Void {
@@ -103,8 +107,10 @@ class ViewController: UIViewController, UIScrollViewDelegate, UICollectionViewDa
     func scrollingCellDidBeginPulling(_ cell: ScrollingCell) {
         self.scrollViewOuter.isScrollEnabled = false
     }
-    func scrollCell(_ cell: ScrollingCell, didChangePullOffset offset: Float) {
-        self.scrollViewOuter.setContentOffset(CGPoint.init(x: Double(offset), y: 0.0), animated: true)
+    func scrollCell(_ cell: ScrollingCell, didChangePullOffset offset: CGFloat) {
+//        self.scrollViewOuter.setContentOffset(CGPoint(x: (offset), y: 0.0), animated: false)
+        self.scrollViewOuter.contentOffset = CGPoint(x: offset, y: 0.0)
+        print("didChangePullOffset:\(offset)")
     }
     func scrollCellDidEndPulling(_ cell: ScrollingCell) {
         self.scrollViewOuter.isScrollEnabled = true
